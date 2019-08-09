@@ -6,7 +6,7 @@
  |____/  |_|    |_____|  \__,_| |_| |_|  \__,_|  \__| |_|  \___|
 ```
 
-# Treinamento JAVA 8 + Spring Solutis
+# Projeto VueJS
 
 ### Projeto Java + Spring
 
