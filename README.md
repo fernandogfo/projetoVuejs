@@ -6,7 +6,7 @@
  |____/  |_|    |_____|  \__,_| |_| |_|  \__,_|  \__| |_|  \___|
 ```
 
-# PROJETO VueJS
+# Treinamento JAVA 8 + Spring Solutis
 
 ### Projeto Java + Spring
 
@@ -21,6 +21,27 @@
 
 * [Docker postgres](https://hub.docker.com/_/postgres) + [Docker pgAdmin4](https://hub.docker.com/r/dpage/pgadmin4/)
 
+```sh
+        docker push drlunatic/vuejs:latest
+        docker push drlunatic/pgadmin4:latest
+        docker push drlunatic/postgres:latest
+        
+        postgres
+        docker run -p 5432:5432  --name container-postgresdb -e POSTGRES_USER=user -e POSTGRES_PASSWORD=admin -d postgres
+
+        pdAdmin4
+        docker run -p 5050:80  --name container-pgadmin -e PGADMIN_DEFAULT_EMAIL=ferna126@hotmail.com -e PGADMIN_DEFAULT_PASSWORD=admin -d dpage/pgadmin4
+
+        VueJS
+        docker run -it -p 8080:8080 --rm --name dockerize-fernando-app-1 vuejs-fernando/dockerize-vuejs-app
+          
+          postgres db config
+          host: host.docker.internal
+          database: postgres
+          user: user
+          password: admin
+        
+```
 
 ### Links Interessantes abaixo vvvvvvv
 
@@ -34,5 +55,7 @@
 * [HipsterTech](https://hipsters.tech) para quem quiser se atualizar e aprender um pouco.
 
 
+
 ### License
 ### MIT
+
